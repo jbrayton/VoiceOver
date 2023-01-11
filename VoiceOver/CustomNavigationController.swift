@@ -7,12 +7,12 @@
 
 import UIKit
 
-class MyNavigationController: UIViewController {
+class CustomNavigationController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let listViewController = ListViewController(myNavigationController: self)
+        let listViewController = ListViewController(customNavigationController: self)
         self.addChild(listViewController)
         self.view.addSubview(listViewController.view)
         self.addConstraints(toChildView: listViewController.view)

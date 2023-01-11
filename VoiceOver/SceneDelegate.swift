@@ -21,7 +21,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         self.connectionOptions = connectionOptions
         let window = UIWindow(windowScene: windowScene)
         window.backgroundColor = UIColor.black
-        let rootViewController = MyNavigationController()
+        let rootViewController = CustomNavigationController()
         self.window = window
         self.rootViewController = UINavigationController(rootViewController: rootViewController)
         window.rootViewController = self.rootViewController

@@ -11,10 +11,10 @@ class ListViewController : UITableViewController {
     
     let cellIdentifier = "cell"
     
-    weak var myNavigationController: MyNavigationController?
+    weak var customNavigationController: CustomNavigationController?
     
-    init( myNavigationController: MyNavigationController ) {
-        self.myNavigationController = myNavigationController
+    init( customNavigationController: CustomNavigationController ) {
+        self.customNavigationController = customNavigationController
         super.init(style: .grouped)
     }
     
@@ -46,7 +46,7 @@ class ListViewController : UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.myNavigationController?.showWebViewController()
+        self.customNavigationController?.showWebViewController()
     }
     
 }
